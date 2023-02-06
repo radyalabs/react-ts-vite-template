@@ -8,7 +8,9 @@ const Header = () => {
   const { isCollapsed, toggleCollapsed } = useHeader();
   return (
     <nav className="bg-primary-500 py-2 px-4 shadow fixed w-full z-10">
-      <div className={`container flex flex-wrap items-center [&>*]:mr-5 ${!isCollapsed ? 'ml-64' : 'ml-24'} transition-width transition-slowest ease`}>
+      <div
+        className={`container flex flex-wrap items-center [&>*]:mr-5 ${!isCollapsed ? 'ml-64' : 'ml-24'} transition-width transition-slowest ease`}
+      >
         <button className="text-xl text-neutral-100" onClick={toggleCollapsed} type="button">
           <NavChevron isCollapsed={isCollapsed} />
         </button>
