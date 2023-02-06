@@ -3,7 +3,7 @@
 Description
 ===========
 
-Base project ini dibuat menggunakan Create React App.
+Base project ini dibuat menggunakan Vite.
 
 Base project ini digunakan untuk mengerjakan project dengan stack hanya react non Next.js.
 
@@ -160,13 +160,13 @@ dibawah ini:
 import Arrow from './Arrow';
 import Chevron from './Chevron';
 
-export { Arrow, Chevron };
+export {Arrow, Chevron};
 ```
 
 Cara import icon dari komponen lain adalah sebagai berikut:
 
 ```typescript
-import { Arrow } from 'icons/';
+import {Arrow} from 'icons/';
 ```
 
 Constants
@@ -214,6 +214,7 @@ Didalam subdirektori tersebut terdiri dari:
 
 ```typescript
 import {lazy} from 'react';
+
 export default lazy(() => import('./PokemonList'));
 ```
 
@@ -226,15 +227,15 @@ import React from 'react';
 import useView from './PokemonList .hooks';
 
 const PokemonList = () => {
-const { pokemons } = usePokemonList ();
+  const {pokemons} = usePokemonList();
 
   return (
-    <>
-      <h1>Pokémon List</h1>
-      {pokemons.map((pokemon) => (
-        {pokemon}
-      ))}
-    </>
+      <>
+        <h1>Pokémon List</h1>
+        {pokemons.map((pokemon) => (
+            {pokemon}
+        ))}
+      </>
   );
 };
 
@@ -245,10 +246,10 @@ export default PokemonList;
 
 ```typescript
 const usePokemonList = () => {
-    /* ...
-     insert business logic here
-    */
-    return { pokemons }
+  /* ...
+   insert business logic here
+  */
+  return {pokemons}
 }
 
 export default usePokemonList;
