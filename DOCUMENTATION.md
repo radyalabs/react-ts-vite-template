@@ -16,8 +16,8 @@ dengan harapan dapat membuat struktur projek jadi lebih rapi dengan memisah-misa
 component dan global component.
 
 Pada setiap component juga diberlakukan pemisahan file berdasarkan fungsinya, contoh Sidebar disitu ada SIdebar.tsx,
-Sidebar.hooks.ts, Sidebar.types.ts. Dimana Sidebar.tsx berisi view dari component tsb. logic business disimpan di
-Sidebar.hooks.ts dan type atau interface yg digunakan component tsb ada di Sidebar.types.ts.
+index.hooks.ts, Sidebar.types.ts. Dimana index.tsx berisi view dari component tsb. logic business disimpan di
+index.hooks.ts dan type atau interface yg digunakan component tsb ada di Sidebar.types.ts.
 
 ```plain
 .
@@ -37,17 +37,17 @@ Sidebar.hooks.ts dan type atau interface yg digunakan component tsb ada di Sideb
 │   │   │   └── Rocket.tsx
 │   │   ├── layout/
 │   │   │   ├── Sidebar/
-│   │   │   │   ├── Sidebar.tsx
-│   │   │   │   ├── Sidebar.hooks.ts
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── index.hooks.ts
 │   │   │   │   └── Sidebar.types.ts
 │   │   │   ├── Header/
-│   │   │   │   ├── Header.tsx
-│   │   │   │   ├── Header.hooks.ts
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── index.hooks.ts
 │   │   │   │   └── Header.types.ts
 │   │   │   └── Content/
-│   │   │       ├── Content.tsx
-│   │   │       ├── Content.hooks.ts
-│   │   │       └── Content.types.ts
+│   │   │       ├── index.tsx
+│   │   │       ├── index.hooks.ts
+│   │   │       └── index.types.ts
 │   │   └── ui/
 │   │       └── InputSearch/
 │   │           ├── InputSearch.tsx
@@ -56,9 +56,9 @@ Sidebar.hooks.ts dan type atau interface yg digunakan component tsb ada di Sideb
 │   ├── constants/
 │   │   └── apiUrl.ts
 │   ├── contexts/
-│   │   └── LayoutContext/
-│   │       ├── LayoutContext.tsx
-│   │       └── LayoutContext.types.ts
+│   │   └── Index/
+│   │       ├── Index.tsx
+│   │       └── Index.types.ts
 │   ├── helpers/
 │   │   └── getChipStatusColor.ts
 │   ├── pages/

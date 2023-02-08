@@ -1,8 +1,8 @@
 import React from 'react';
 
-import useContent from 'components/layout/Content/Content.hooks';
+import useContent from '@/components/layout/Content/index.hooks';
 
-import type { ContentProps } from './Content.types';
+import type { ContentProps } from './index.types';
 
 const Content = (props: ContentProps) => {
   const { children } = props;

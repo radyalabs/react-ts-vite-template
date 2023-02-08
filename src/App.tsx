@@ -1,10 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-import Content from 'components/layout/Content/Content';
-import Header from 'components/layout/Header/Header';
-import Sidebar from 'components/layout/Sidebar/Sidebar';
-import { LayoutProvider } from 'contexts/LayoutContext/LayoutContext';
+import Content from '@/components/layout/Content';
+import Header from '@/components/layout/Header';
+import Sidebar from '@/components/layout/Sidebar';
+import { LayoutProvider } from '@/contexts/LayoutContext';
 
 import './App.css';
 

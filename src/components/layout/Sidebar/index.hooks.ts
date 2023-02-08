@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 
-import { useLayoutContext } from 'contexts/LayoutContext/LayoutContext';
+import { useLayoutContext } from '@/contexts/LayoutContext';
 
 const useSidebar = () => {
   const { isCollapsed } = useLayoutContext();

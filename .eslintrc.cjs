@@ -58,16 +58,7 @@ module.exports = {
     'eslint-plugin-simple-import-sort',
   ],
   rules: {
-    'import/extensions': ['error', 'ignorePackages',
-      {
-        'pattern': {
-          'js': 'never',
-          'ts': 'never',
-          'jsx': 'never',
-          'tsx': 'never'
-        }
-      }
-    ],
+    'import/extensions': 'off',
     'import/no-extraneous-dependencies': ['error', {'devDependencies': true}],
     indent: [
       'warn',

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import NavChevron from 'components/icons/NavChevron/NavChevron';
+import { NavChevron } from '@/components/icons';
 
-import useHeader from './Header.hooks';
+import useHeader from './index.hooks';
 
 const Header = () => {
   const { isCollapsed, toggleCollapsed } = useHeader();
